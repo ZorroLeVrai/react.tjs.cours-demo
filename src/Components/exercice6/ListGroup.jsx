@@ -3,6 +3,7 @@ import ListGroupItem from "./ListGroupItem";
 
 function ListGroup({ items, heading, onSelectItem }) {
   const [lastClickedIndex, setLastClickedIndex] = useState(-1);
+
   return (
     <>
       <h1>{heading}</h1>
