@@ -15,6 +15,7 @@ const RouterLayout = () => {
         <LinkElement to="/exercice4" text="ex 4" />
         <LinkElement to="/exercice5" text="ex 5" />
         <LinkElement to="/exercice6" text="ex 6" />
+        <LinkElement to="/Alert" text="Alert" />
       </div>
       <div className="mt-4 mx-2">
         <Outlet />

@@ -4,6 +4,11 @@ import ListGroupItem from "./ListGroupItem";
 function ListGroup({ items, heading, onSelectItem }) {
   const [lastClickedIndex, setLastClickedIndex] = useState(-1);
 
+  const handleClick = (index, item) => {
+    setLastClickedIndex(index);
+    onSelectItem(item);
+  };
+
   return (
     <>
       <h1>{heading}</h1>
@@ -11,7 +16,7 @@ function ListGroup({ items, heading, onSelectItem }) {
       <ul className="list-group">
         {items.map((item, index) => (
           <ListGroupItem key={index} text={item} highlighted={lastClickedIndex === index}
-            onClickHandler={() => { setLastClickedIndex(index); onSelectItem(item); }}
+            onClickHandler={() => handleClick(index, item)}
           />
         ))}
       </ul>

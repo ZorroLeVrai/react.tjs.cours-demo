@@ -11,6 +11,7 @@ import ListGroupExercice3Etape2 from "./Components/exercice3_etape2/ListGroup";
 import ListGroupExercice4 from "./Components/exercice4/ListGroup";
 import ListGroupExampleExercice5 from "./Components/exercice5/ListGroupExample";
 import ListGroupExampleExercice6 from "./Components/exercice6/ListGroupExample";
+import Main from "./Components/Alert/Main";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/exercice4" element={<ListGroupExercice4/>} />
             <Route path="/exercice5" element={<ListGroupExampleExercice5/>} />
             <Route path="/exercice6" element={<ListGroupExampleExercice6/>} />
+            <Route path="/Alert" element={<Main/>} />
           </Route>
         </Routes>
       </BrowserRouter>
